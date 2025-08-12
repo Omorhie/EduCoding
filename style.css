@@ -840,6 +840,10 @@ body {
     scrollbar-color: #0077ff #ffffff;
 }
 
+.hidden {
+  display: none !important;
+}
+
 
 
 /* Responsive */

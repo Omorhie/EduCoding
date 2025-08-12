@@ -38,7 +38,6 @@ document.getElementById("btn-mulai").addEventListener("click", function(e) {
 
 
 
-
 const materiData = [
   {
     id: 1,
@@ -156,10 +155,10 @@ function renderGridMateri() {
 function showListMateri() {
   homeText.classList.add("hidden");
   carouselItems.forEach(i => i.classList.add("hidden"));
+  carouselContainer.classList.add("hidden");
   listMateriSection.classList.remove("hidden");
   materiDetailSection.classList.add("hidden");
   quizSection.classList.add("hidden");
-  renderGridMateri();
 }
 
 function showMateriDetail(materi) {
@@ -445,8 +444,8 @@ backBtn.addEventListener("click", showListMateri);
 
 function showHome() {
   homeText.classList.remove("hidden");
-  carouselItems.forEach(i => i.classList.remove("hidden"));
   carouselContainer.classList.remove("hidden");
+  carouselItems.forEach(i => i.classList.remove("hidden"));
   prevBtn.classList.remove("hidden");
   nextBtn.classList.remove("hidden");
 
@@ -454,6 +453,7 @@ function showHome() {
   materiDetailSection.classList.add("hidden");
   quizSection.classList.add("hidden");
 }
+
 
 navQuiz.addEventListener("click", e => {
   e.preventDefault();
