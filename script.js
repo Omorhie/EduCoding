@@ -152,22 +152,13 @@ function renderGridMateri() {
   });
 }
 
-// function showListMateri() {
-//   homeText.classList.add("hidden");
-//   carouselItems.forEach(i => i.classList.add("hidden"));
-//   listMateriSection.classList.remove("hidden");
-//   materiDetailSection.classList.add("hidden");
-//   quizSection.classList.add("hidden");
-//   renderGridMateri();
-// }
-
 function showListMateri() {
   homeText.classList.add("hidden");
   carouselItems.forEach(i => i.classList.add("hidden"));
-  carouselContainer.classList.add("hidden");  // <== Tambahkan ini
   listMateriSection.classList.remove("hidden");
-  materiDetailSection.classList.add("hidden");
+  materiDetailSgection.classList.add("hidden");
   quizSection.classList.add("hidden");
+  carouselContainer.classList.add("hidden"); 
   renderGridMateri();
 }
 
