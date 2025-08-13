@@ -156,7 +156,7 @@ function showListMateri() {
   homeText.classList.add("hidden");
   carouselItems.forEach(i => i.classList.add("hidden"));
   listMateriSection.classList.remove("hidden");
-  materiDetailSgection.classList.add("hidden");
+  materiDetailSection.classList.add("hidden");
   quizSection.classList.add("hidden");
   carouselContainer.classList.add("hidden"); 
   renderGridMateri();
